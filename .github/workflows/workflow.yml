@@ -1,0 +1,10 @@
+name: first wf
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my sample1
+        run: echo i am batman
