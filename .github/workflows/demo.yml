@@ -6,3 +6,21 @@ jobs:
     steps:  
       - name: my-step
         run: echo "Hello world!"
+---
+file_name: HelloWorld.java
+package_name: com.example
+class_name: HelloWorld
+
+imports:
+  - java.util.Scanner
+
+class_body: |
+  public class HelloWorld {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+          System.out.print("Enter your name: ");
+          String name = scanner.nextLine();
+          System.out.println("Hello, " + name + "!");
+      }
+  }
+
