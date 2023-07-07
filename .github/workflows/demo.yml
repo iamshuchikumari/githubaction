@@ -1,13 +1,11 @@
-name: hello-world
+file_name: HelloWorld.java
 'on': push
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:  
-      - name: my-step
-        run: echo "Hello world!"
+      
 ---
-file_name: HelloWorld.java
 package_name: com.example
 class_name: HelloWorld
 
